@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-attachment:scroll;
+        }
+
+        /* Navigation Bar Styles */
+        .navbar {
+            background-color: #333;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        /* Registration Form Styles */
+        .registration-form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            margin-top: 60px;
+        }
+
+        .registration-form label {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: 400;
+            margin-right: 8px;
+        }
+
+        .registration-form input[type="text"],
+        .registration-form input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .registration-form button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .registration-form button[type="reset"] {
+            background-color: #dc3545;
+        }
+        .registration-form button:hover {
+            background-color: #0056b3;
+        }
+
+
+        .registration-form button[type="reset"]:hover {
+            background-color: #c82339;}
+         
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <!-- Navigation links -->
+        <div>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+        <!-- Login and Register links -->
+        <div>
+            <a href="#">Login</a>
+            <a href="#">Register</a>
+        </div>
+    </div>
+
+    <div class="registration-form">
+        <form action="" method="get">
+            <div>
+                <label for="First Name">First Name</label>
+                <input type="text" name="First_name" id="">
+            </div>
+            <div>
+                <label for="Last Name">Last Name</label>
+                <input type="text" name="Last_name" id="">
+            </div>
+            <div>
+                <label>Email</label>
+                <input type="text" name="Email" id="">
+            </div>
+            <div>
+                <label>Password</label>
+                <input type="password" name="Password" id="">
+            </div>
+            <div>
+                <label>Gender</label>
+                <input type="radio" name="gender" value="female"><span>F</span>
+                <input type="radio" name="gender" value="male"><span>M</span>
+            </div>
+            <div>
+                <button type="submit">Register</button>
+                <button type="reset">Reset</button>
+            </div>
+            
+            
+
+        
+        
+        </form>
+        <div id="vline"> </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+label{
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-weight: 300;
+align-items: center;
+
+}
+
+input{
+    margin:4px;
+    border-radius:6px;
+}
+
+button{
+    padding: 8px;
+    margin-top: 8px;
+    border-radius:6px;
+
+}
+
+.registrartion-form{
+    box-shadow: 5px 10px #888888;
+
+}

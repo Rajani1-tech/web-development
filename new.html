@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration and Login</title>
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-attachment: scroll;
+        }
+
+        /* Navigation Bar Styles */
+        .navbar{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color:lightskyblue;
+            padding: 15px;
+            gap:10px;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        /* Layout Container */
+        .container {
+            display: flex;
+            align-items: flex-start;
+            width: 100%;
+            margin-top: 60px;
+        }
+
+        /* Registration Form Styles */
+        .registration-form,
+        .login-form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px lightblue;
+            width: 400px;
+            margin-left : 85px;
+        }
+
+        .registration-form label,
+        .login-form label {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: 400;
+            margin-right: 8px;
+        }
+
+        .registration-form input[type="text"],
+        .registration-form input[type="password"],
+        .login-form input[type="text"],
+        .login-form input[type="password"] {
+            width: 94%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .registration-form button,
+        .login-form button {
+            width: 100%;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top:10px;
+            
+        }
+
+        .registration-form button[type="reset"],
+        .login-form button[type="reset"] {
+            background-color: lightskyblue;
+        }
+        .login-form button{background-color: lightskyblue}
+
+        .registration-form button:hover,
+        .login-form button:hover {
+            background-color: lightsteelblue;
+        }
+
+        /* Vertical Line */
+        #vline {
+            border-left: 100px solid #ccc;
+            height: 100%;
+            margin: 0 20px;
+        }
+        .navbar.home{
+            padding: 20px, 20px, 20px, 20px
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <!-- Navigation links -->
+            <a href="Home">Home</a>
+            <a href="About">About</a>
+            <a href="Contact">Contact</a>
+            <a href="login">Login</a>
+            <a href="Register">Register</a>
+        
+    </div>
+
+    <div class="container">
+        <div class="registration-form">
+            <form action="" method="get">
+                <!-- Registration form content -->
+                <div>
+                    <label for="First Name">First Name</label>
+                    <input type="text" name="First_name" id="">
+                </div>
+                <div>
+                    <label for="Last Name">Last Name</label>
+                    <input type="text" name="Last_name" id="">
+                </div>
+                <div>
+                    <label>Email</label>
+                    <input type="text" name="Email" id="">
+                </div>
+                <div>
+                    <label>Password</label>
+                    <input type="password" name="Password" id="">
+                </div>
+                <div>
+                    <label>Gender</label>
+                    <input type="radio" name="gender" value="female"><span>F</span>
+                    <input type="radio" name="gender" value="male"><span>M</span>
+                </div>
+                <div>
+                    <button type="submit">Register</button>
+                    <button type="reset">Reset</button>
+                </div>
+            </form>
+        </div>
+        <div id="vline"></div>
+        <div class="login-form">
+            <form action="login.php" method="post">
+                <!-- Login form content -->
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

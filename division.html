@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .sibling_element{
+            padding:10px ;
+            background-color: aqua;
+            position: sticky;
+            
+        }
+        .main_element{
+            background-color: skyblue;
+            position: static;
+            padding: 10px; margin-left: 10px;
+            /* margin: 10px; */
+            left:10px;
+            
+            
+        }
+        .parent_element{
+            position: static;
+            background-color:pink;
+            padding: 10px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <div class="sibling_element">
+            I'm the only one sibling element.
+
+        </div>
+
+        <div class="main_element"> All eyes on me. I am the only main element.</div>
+        <div class="parent_element"> I am the other sibligs element.</div>
+    </div>
+
+    
+</body>
+</html>
